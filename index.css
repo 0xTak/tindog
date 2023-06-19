@@ -14,7 +14,7 @@ html, body {
 }
 
 html {
-    background: linear-gradient(180deg, #FFFFFF 0%, #bdb0b0 100%);
+    background: #bdb0b0;
 }
 
 
@@ -79,6 +79,11 @@ body {
     position: absolute;
     bottom: 1em;
     left: 2em;
+}
+
+.dog-name-age,
+.dog-bio {
+    margin: 0;
 }
 
 .end-message {
