@@ -1,0 +1,156 @@
+/* Apply properties to all elements */
+* {
+    box-sizing: border-box;
+    /* outline: 2px dotted tomato; */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #2B283A;
+
+}
+
+html {
+    background: linear-gradient(180deg, #FFFFFF 0%, #bdb0b0 100%);
+}
+
+
+body {
+    width: 550px;
+    margin: 20px auto;
+    border: 5px solid black;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ----- HEADER ----- */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.icon-profile,
+.icon-chat {
+    width: 2em;
+}
+
+.logo {
+    width: 5em;
+}
+
+/* ----- TYPOGRAPHY ----- */
+
+.dog-name-age {
+    font-weight: 600;
+    font-size: 2em;
+
+}
+
+.dog-bio {
+    font-weight: 400;
+    font-size: 24px;
+    color: #B7B7B7;
+}
+
+
+/* ----- MAIN CONTENT ----- */
+
+
+.dog-avatar {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.dog-profile {
+    position: relative;
+}
+
+.dog-info {
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+}
+
+.end-message {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Style the like and nope badges */
+.badge-like,
+.badge-nope {
+    display: none;
+    position: absolute;
+    top: 3.5em;
+    left: 2em;
+    width: 40%;
+    transform: rotate(-30deg);
+}
+
+/* ----- BUTTON ----- */
+
+.btn-container {
+    text-align: center;
+    padding: 2em;
+}
+
+.cross-btn {
+    margin-right: 0.5em;
+}
+
+.heart-btn {
+    margin-left: 0.5em; 
+}
+
+
+
+/* Style buttons */
+.cross-btn,
+.heart-btn {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 5.5em;
+    height: 5.5em;
+}
+
+/* Style button hover state */
+.cross-btn:hover {
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+    cursor: pointer;
+}
+
+.heart-btn:hover {
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+    cursor: pointer;
+}
+
+/* Change background color of buttons when active (clicked) */
+.heart-btn-active-background-color {
+    background: #DBFFF4;
+}
+
+.cross-btn-active-background-color {
+    background: #FFE7EF;
+}
+
+/* Style buttons in disabled state */
+.heart-btn:disabled,
+.cross-btn:disabled {
+    background: #e0e0e0; 
+    cursor: not-allowed;
+}
