@@ -1,4 +1,4 @@
-# co7d2441293b420ad0751f9a0
+# Tindog
 
 Quick start:
 
